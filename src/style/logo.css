@@ -1,0 +1,54 @@
+.logo {
+  position: relative;
+  min-width: 200px;
+  width: 200px;
+  min-height: 200px;
+  height: 200px;
+  background: #00A9FF;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logoO {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border: 18px solid white;
+  border-radius: 50%;
+}
+
+.logoA {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+}
+
+.logoA::before,
+.logoA::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transform-origin: center center;
+  width: 40px;
+  height: 130px;
+  background: white;
+  border-radius: 20px;
+  border: 10px solid #00A9FF;
+}
+
+.logoA:before {
+  left: calc(50%);
+  transform: rotate(-26deg);
+}
+
+.logoA:after {
+  left: calc(50% - 40px);
+  transform: rotate(26deg);
+}
