@@ -52,3 +52,11 @@
   left: calc(50% - 40px);
   transform: rotate(26deg);
 }
+
+.small {
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  right: 50vw;
+  transform: translate(-50%, -40%) scale(.2);
+}

@@ -1,15 +1,17 @@
 import React from 'react';
 
-const About = () => {
+const About = (props) => {
+
+  const { about, introduction, skills } = props.content;
+
   return (
     <>
-      About me
       <div className="aboutSection">
-        <h3 className="aboutMe"></h3>
+        <h3 className="aboutMe">{about}</h3>
         <div className="myPhoto"></div>
-        <div className="skills"></div>
+        <div className="skills">{skills}</div>
         <div className="introduction">
-          <p className="boutMeIntro"></p>
+          <p className="boutMeIntro">{introduction}</p>
         </div>
       </div>
     </>
