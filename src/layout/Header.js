@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <Logo />
 
-      <section>
+      <section className="logoName">
         <h1>Anna Orysiak</h1>
         <h2>Frontend Developer</h2>
       </section>

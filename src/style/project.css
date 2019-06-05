@@ -1,0 +1,147 @@
+.projectArea {
+  position: relative;
+  background: var(--dark-main-color);
+  margin: 30px 0;
+  padding: 20px;
+  min-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  overflow: hidden;
+}
+
+.projectArea::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-color);
+  transition: transform .4s ease-in-out;
+  z-index: 0;
+}
+
+.projectId {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  transition: font-size .3s;
+
+}
+
+.projectId::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  width: 50px;
+  height: 1px;
+  background: var(--dark-color);
+  transition: transform .3s;
+}
+
+.projectTitle {
+  position: absolute;
+  top: 20px;
+  left: initial;
+  margin-bottom: 1rem;
+  padding-left: 100px;
+  transition: .3s;
+}
+
+.projectDescription {
+  position: absolute;
+  top: 3rem;
+  left: 20px;
+  margin-bottom: 1rem;
+  padding: 20px 10px 150px 100px;
+  font-size: .9rem;
+  transition: .3s;
+}
+
+.projectActions {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 60px;
+}
+
+.projectAnchor {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  line-height: 2rem;
+  border-bottom: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .6s .3s;
+}
+
+.projectAnchor::before {
+  content: "v";
+  display: block;
+  position: absolute;
+  bottom: -17px;
+  right: 0;
+  transform: rotate(-90deg) translateY(0);
+  transition: transform .3s, font-color .6s .3s;
+}
+
+.projectAnchor::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background: var(--dark-color);
+  transition: transform .3s, background-color .6s .3s;
+}
+
+.projectAnchor:hover::before {
+  transform: rotate(-90deg) translateY(30px);
+}
+
+.projectAnchor:hover::after {
+  transform: translateX(40%);
+}
+
+.projectArea:hover::before {
+  transform: translateX(100%);
+}
+
+.projectArea:hover .projectAnchor,
+.projectArea:hover .projectTitle,
+.projectArea:hover .projectDescription {
+  color: white;
+}
+
+.projectArea:hover .projectAnchor {
+  border-bottom-color: white;
+}
+
+.projectArea:hover .projectId::before,
+.projectArea:hover .projectAnchor::after {
+  background: white;
+}
+
+.projectArea:hover .projectId::before {
+  transform: translateY(calc(3rem - 10px));
+}
+
+.projectArea:hover .projectId {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, .3);
+}

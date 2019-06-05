@@ -7,7 +7,7 @@ const Projects = (props) => {
   let projectList = [];
 
   if (projects) {
-    projectList = projects.map(project => <Project key={project.id} properties={project} />);
+    projectList = projects.map(project => <Project key={project.id} properties={project} mobile={props.mobile} />);
   }
 
   return (

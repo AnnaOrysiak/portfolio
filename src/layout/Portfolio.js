@@ -14,16 +14,14 @@ class Portfolio extends Component {
     content: {},
     mobile: true,
     menuActive: false,
-    sectionActive: "header",
+    scrollY: 0
   }
 
   getData = (lang = "pl") => {
-    console.log("otrzymany język", lang);
     return fetch('./content.json')
       .then((response) => response.json())
       .then((content) => {
         const translation = content.filter(element => element.language === lang)
-
         this.setState({ content: translation[0] })
       })
       .catch((error) => {
@@ -34,13 +32,16 @@ class Portfolio extends Component {
   checkDevice() {
     const deviceWidth = (window.innerWidth > 0) ? window.innerWidth : "640";
     const deviceHeight = (window.innerHeight > 0) ? window.innerHeight : "360";
-    if (deviceWidth > 823 && deviceHeight >= 1024) {
+
+    if (deviceHeight >= 768 && deviceWidth >= 1024) {
       this.setState({ mobile: false })
+    } else {
+      this.setState({ mobile: true })
     }
   }
 
   playAnimation = () => {
-    this.state.menuActive === false ? console.log("włączam animację_1") : console.log("włączam animację_2");
+    console.log("Animacja startowa");
   }
 
   naviHandler = () => {
@@ -56,38 +57,44 @@ class Portfolio extends Component {
     this.setState({ language });
   }
 
+  handleScroll = (e) => {
+    const scrollY = window.scrollY;
+    this.setState({ scrollY });
+  }
+
   componentDidMount() {
     // pobieramy dane (content)
     this.getData();
 
     // tutaj sprawdzamy typ urządzenia: mobile/desktop (mobile)
     this.checkDevice();
+
+    // tutaj włączamy animację startową
+    this.playAnimation();
+
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentDidUpdate() {
-    // sprawdzamy czy zmienił się status menu, sekcja albo język
-
+    // sprawdzamy czy zmienił się status menu albo język
     if (this.state.language !== this.state.content.language) {
       this.getData(this.state.language);
     }
-
-    // tutaj włączamy animację 1
-    this.playAnimation();
-    // tutaj zmieniamy state (sectionActive, menuActive, language)
-    // tutaj włączamy animację 2
   }
 
   render() {
 
-    const { content } = this.state;
+    const { language, content, mobile, scrollY } = this.state;
 
     return (
       <>
-        <Navigation naviHandler={this.naviHandler} langHandler={this.langHandler} content={content} />
+        <Navigation naviHandler={this.naviHandler} langHandler={this.langHandler} scrollHandler={this.scrollHandler} language={language} content={content} scrollY={scrollY} />
         <Header />
-        <Projects content={content} />
-        <About content={content} />
-        <Contact content={content} />
+        <main>
+          <Projects content={content} mobile={mobile} />
+          <About content={content} />
+          <Contact content={content} />
+        </main>
         <Footer />
       </>
     );

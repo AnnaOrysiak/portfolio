@@ -4,10 +4,11 @@
   width: 200px;
   min-height: 200px;
   height: 200px;
-  background: #00A9FF;
+  background: var(--main-color);
   border: none;
   border-radius: 50%;
   overflow: hidden;
+  animation: enter 2s ease-in-out both;
 }
 
 .logoO {
@@ -40,7 +41,7 @@
   height: 130px;
   background: white;
   border-radius: 20px;
-  border: 10px solid #00A9FF;
+  border: 10px solid var(--main-color);
 }
 
 .logoA:before {
@@ -59,4 +60,19 @@
   left: 50vw;
   right: 50vw;
   transform: translate(-50%, -40%) scale(.2);
+  animation: none;
+}
+
+@keyframes enter {
+  0% {
+    transform: rotate(-1800deg) scale(0)
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2)
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1)
+  }
 }

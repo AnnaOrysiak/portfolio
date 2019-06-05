@@ -1,0 +1,111 @@
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  font-size: 3rem;
+}
+
+.socialmedia a {
+  color: var(--dark-color);
+  transition: color .3s ease-in-out;
+}
+
+.socialmedia a:hover {
+  color: var(--main-color);
+}
+
+.contactHeader {
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  min-height: 400px;
+}
+
+.contactForm label {
+  display: block;
+  padding: 10px 0;
+  width: 66%;
+}
+
+.name,
+.email,
+.message {
+  display: block;
+  padding: 5px 10px 5px;
+  min-width: 66%;
+  max-width: 66%;
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--main-color);
+  background: none;
+}
+
+.message {
+  border-color: var(--main-color);
+}
+
+.name:focus,
+.email:focus,
+.message:focus {
+  background: var(--light-main-color);
+  outline: none;
+}
+
+.name:valid,
+.email:valid {
+  border-bottom-color: limegreen;
+}
+
+.message:valid {
+  border-color: limegreen;
+}
+
+.formButton {
+  margin: 30px 0;
+  padding: 10px 30px;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  background: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+@media(min-width:1024px) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .name,
+  .email,
+  .message {
+    min-width: 46%;
+    max-width: 46%;
+  }
+
+}

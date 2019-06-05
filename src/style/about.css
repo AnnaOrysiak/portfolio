@@ -1,0 +1,65 @@
+.myPhoto {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: url("../images/AO.png") gray;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.skills,
+.introduction {
+  width: 100%;
+  min-height: 50px;
+  margin: 30px 0;
+  padding: 40px 20px;
+}
+
+.skills {
+  text-align: center;
+  background: var(--dark-main-color);
+  color: var(--light-color);
+}
+
+.skillsHeader {
+  padding: 1rem 0 4rem;
+}
+
+.skillset {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+
+.skillset>* {
+  padding: 1rem;
+}
+
+.skillset span {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: white;
+  opacity: 0;
+  font-size: 1rem;
+  transition: opacity .3s;
+  background-color: var(--dark-main-color);
+}
+
+.skillset i:hover+span {
+  opacity: 1;
+}
+
+.aboutMeIntro {
+  text-align: justify;
+  padding: 10px 0;
+  text-indent: 1.5rem;
+}
