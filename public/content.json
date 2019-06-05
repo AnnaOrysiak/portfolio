@@ -1,0 +1,114 @@
+[{
+        "language": "pl",
+        "home": "Start",
+        "about": "O mnie",
+        "skills": "Umiejętności",
+        "skill_html": "",
+        "skill_css": "",
+        "skill_js": "",
+        "skill_git": "",
+        "skill_wp": "",
+        "skill_ps": "Potrafię obsługiwać Photoshopa",
+        "skill_team": "Praca z innymi ludźmi działa na mnie bardzo motywująco",
+
+        "technologies": "Technologie",
+        "introduction_1": "Nazywam się Anna Orysiak. Przygodę z programowaniem rozpoczęłam od nauki C++, potem pojawiły się technologie Webowe - PHP i MySQL, aż wreszcie skupiłam się na frontendzie. Czuję silną potrzebę ciągłego rozwoju, dlatego, uwielbiam uczyć się nowych rzeczy.",
+        "introduction_2": "Wolne chwile spędzam czytając dobrą książkę w hamaku, organizując rodzinną eskapadę lub próbując rozwiązać łamigłówki kolejnego Pokoju Ucieczki (Escape Room). Interesuję się także Kulturą Dalekiego Wschodu.",
+        "hobby": ["hobby"],
+        "portfolio": "Moje projekty",
+        "projects": [{
+                "id": 1,
+                "project_name": "Battleship",
+                "project_description": "Prosty projekt popularnej gry w statki. CRA",
+                "project_url_live": "https://annaorysiak.github.io/battleship/",
+                "project_url_code": "https://github.com/AnnaOrysiak/battleship",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176_960_720.jpg"
+            },
+            {
+                "id": 2,
+                "project_name": "Study Time Counter",
+                "project_description": "Licznik czasu nauki i przerwy - Web App typu Pomodoro Clock",
+                "project_url_live": "https://annaorysiak.github.io/counter/",
+                "project_url_code": "https://github.com/AnnaOrysiak/counter",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2018/09/23/13/54/hourglass-3697513__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/11/11/21/15/time-1817725_960_720.jpg"
+            },
+            {
+                "id": 3,
+                "project_name": "Usługi geodezyjne i kartograficzne",
+                "project_description": "Strona-wizytówka firmy",
+                "project_url_live": "https://annaorysiak.github.io/ugik/",
+                "project_url_code": "https://github.com/AnnaOrysiak/ugik",
+                "project_img_mobile": "",
+                "project_img_desktop": ""
+            },
+            {
+                "id": 4,
+                "project_name": "Sensitive - opowiadania (w przebudowie)",
+                "project_description": "Projekt umożliwia dodawanie, edycję i usuwanie treści, rejestrację i logowanie użytkowników (jQuery, Bootstrap, PHP oraz MySQL)",
+                "project_url_live": "",
+                "project_url_code": "https://github.com/AnnaOrysiak/sensitive",
+                "project_img_mobile": "",
+                "project_img_desktop": ""
+            }
+        ],
+        "contact": "Kontakt",
+        "contact_invitation": "Zapraszam do kontaktu",
+        "your_name": "Twoje imię",
+        "your_email": "Twój e-mail",
+        "your_message": "Twoja wiadomość",
+        "send_message": "Wyślij"
+    },
+    {
+        "language": "en",
+        "home": "Home",
+        "about": "About me",
+        "skills": "Skills",
+        "technologies": "Technologies",
+        "introduction": "still empty",
+        "portfolio": "My portfolio",
+        "projects": [{
+                "id": 1,
+                "project_name": "as",
+                "project_description": "asc"
+            },
+            {
+                "id": 2,
+                "project_name": "sac",
+                "project_description": "ac"
+            }
+        ],
+        "contact": "Contact",
+        "contact_invitation": "Feel free to contact me",
+        "your_name": "Your name",
+        "your_email": "Your e-mail address",
+        "your_message": "Your message",
+        "send_message": "Send"
+    },
+
+    {
+        "language": "",
+        "home": "",
+        "about": "",
+        "skills": "",
+        "introduction": "",
+        "portfolio": "",
+        "projects": [{
+                "project_name": "",
+                "project_description": ""
+            },
+            {
+                "project_name": "",
+                "project_description": ""
+            }
+        ],
+        "contact": "",
+        "contact_invitation": "",
+        "your_name": "",
+        "your_email": "",
+        "your_message": "",
+        "send_message": ""
+
+    }
+]
