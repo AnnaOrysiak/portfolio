@@ -6,9 +6,9 @@ Portfolio had been created by myself.
 
 ## Development
 
-*Contact form is working thanks to EmailJS implementation.
+* Contact form is working thanks to EmailJS implementation.
 
 ## Meta
 
-*Anna Orysiak - <amorysiak@gmail.com>   
-*[https://github.com/AnnaOrysiak](https://github.com/AnnaOrysiak)
+* Anna Orysiak - <amorysiak@gmail.com>   
+* [https://github.com/AnnaOrysiak](https://github.com/AnnaOrysiak)
