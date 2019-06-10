@@ -10,5 +10,5 @@ Portfolio had been created by myself.
 
 ## Meta
 
-*Anna Orysiak - <amorysiak@gmail.com>
+*Anna Orysiak - <amorysiak@gmail.com>   
 *[https://github.com/AnnaOrysiak](https://github.com/AnnaOrysiak)
