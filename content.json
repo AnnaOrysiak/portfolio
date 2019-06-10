@@ -1,0 +1,150 @@
+[{
+        "language": "pl",
+        "home": "Start",
+        "about": "O mnie",
+        "soft_skills": "Umiejętności miękkie",
+        "skill_team": "Praca w zespole zwieksza moją motywację",
+        "skill_communication": "Sprawnie komunikuję się z innymi ludźmi",
+        "skill_tasks": "Potrafię świetnie zarządzać czasem i organizacją pracy",
+        "skill_learn": "Chętnie uczę się nowych rzeczy",
+        "skill_nonconflicting": "Dążę do rozwiązywania konfliktów",
+
+        "hard_skills": "Umiejętności twarde",
+        "skill_html": "Posiadam wiedzę z zakresu HTML",
+        "skill_css": "Dobrze znam CSS",
+        "skill_js": "Lubię programować w JavaScript",
+        "skill_jq": "Potrafię posługiwać się biblioteką jQuery",
+        "skill_git": "Chętnie korzystam z Git jako systemu kontroli wersji",
+        "skill_wp": "Chętie korzystam z Webpack'a",
+        "skill_ps": "Potrafię obsługiwać Photoshopa",
+        "skill_react": "Rozwijam swoje umiejętności programowania w React",
+        "skill_sass": "Potrafię korzystać ze zmiennych, mixins i innych możliwości Sass",
+        "skill_bootstrap": "Czasami korzystam z biblioteki bootstrap",
+        "skill_nodejs": "Rozwijam swoje umiejętności w zakresie Node.js",
+        "skill_mongodb": "Rozwijam swoje umiejętności w zakresie MongoDB",
+        "skill_express": "Rozwijam swoje umiejętności korzystania z Expressa",
+
+        "introduction_1": "Nazywam się Anna Orysiak. Przygodę z programowaniem rozpoczęłam od nauki C++, potem pojawiły się technologie Webowe - PHP i MySQL, aż wreszcie skupiłam się na frontendzie. Czuję silną potrzebę ciągłego rozwoju, dlatego, uwielbiam uczyć się nowych rzeczy.",
+        "introduction_2": "Wolne chwile spędzam czytając dobrą książkę w hamaku, organizując rodzinną eskapadę lub próbując rozwiązać łamigłówki kolejnego Pokoju Ucieczki (Escape Room). Interesuję się także Kulturą Dalekiego Wschodu.",
+        "hobby": ["hobby"],
+        "portfolio": "Moje projekty",
+        "projects": [{
+                "id": 1,
+                "project_name": "Battleship",
+                "project_description": "Prosty projekt popularnej gry w statki. CRA",
+                "project_url_live": "https://annaorysiak.github.io/battleship/",
+                "project_url_code": "https://github.com/AnnaOrysiak/battleship",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176_960_720.jpg"
+            },
+            {
+                "id": 2,
+                "project_name": "Study Time Counter",
+                "project_description": "Licznik czasu nauki i przerwy - Web App typu Pomodoro Clock",
+                "project_url_live": "https://annaorysiak.github.io/counter/",
+                "project_url_code": "https://github.com/AnnaOrysiak/counter",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2018/09/23/13/54/hourglass-3697513__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/11/11/21/15/time-1817725_960_720.jpg"
+            },
+            {
+                "id": 3,
+                "project_name": "Usługi geodezyjne i kartograficzne",
+                "project_description": "Strona-wizytówka firmy",
+                "project_url_live": "https://annaorysiak.github.io/ugik/",
+                "project_url_code": "https://github.com/AnnaOrysiak/ugik",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2013/12/22/17/29/surveying-232550__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2013/12/22/17/29/surveying-232550_960_720.jpg"
+            },
+            {
+                "id": 4,
+                "project_name": "Sensitive - opowiadania (w przebudowie)",
+                "project_description": "Projekt umożliwia dodawanie, edycję i usuwanie treści, rejestrację i logowanie użytkowników (jQuery, Bootstrap, PHP oraz MySQL)",
+                "project_url_live": "",
+                "project_url_code": "https://github.com/AnnaOrysiak/sensitive",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png"
+            }
+        ],
+        "contact": "Kontakt",
+        "contact_invitation": "Zapraszam do kontaktu",
+        "your_name": "Twoje imię",
+        "your_email": "Twój e-mail",
+        "your_message": "Twoja wiadomość",
+        "send_message": "Wyślij"
+    },
+    {
+        "language": "en",
+        "home": "Home",
+        "about": "About me",
+        "soft_skills": "Soft skills",
+        "skill_team": "Working in a team increases my motivation",
+        "skill_communication": "I communicate well with other people",
+        "skill_tasks": "I can manage time and organization of work well",
+        "skill_learn": "I willingly learn new things",
+        "skill_nonconflicting": "I am striving to resolve conflicts",
+
+        "hard_skills": "Hard skills",
+        "skill_html": "I know HTML",
+        "skill_css": "I know CSS well",
+        "skill_js": "I like programming in JavaScript",
+        "skill_jq": "I can use the jQuery library",
+        "skill_git": "I like to use Git as a version controll system",
+        "skill_wp": "I'm eager to use Webpack",
+        "skill_ps": "I can handle Photoshop",
+        "skill_react": "I'm developing my programming skills in React",
+        "skill_sass": "I can use variables, mixins and other in Sass",
+        "skill_bootstrap": "Sometimes I use the bootstrap library",
+        "skill_nodejs": "I'm developing my programming skills in Node.js",
+        "skill_mongodb": "I'm developing my programming skills in MongoDB",
+        "skill_express": "I'm developing my programming skills in Express",
+
+        "introduction_1": "I'm Anna Orysiak. I started the adventure with programming from learning C ++, then came the Web technologies - PHP and MySQL, and finally I focused on the frontend. I feel a strong need for continuous development, that's why I love learning new things.",
+        "introduction_2": "I spend my free time reading a good book in a hammock, organizing a family escapade or trying to solve the puzzles of the next Escape Room. I am also interested in Far Eastern Culture.",
+        "hobby": ["hobby"],
+        "portfolio": "My projects",
+        "projects": [{
+                "id": 1,
+                "project_name": "Battleship",
+                "project_description": "A simple project od the popular game. CRA",
+                "project_url_live": "https://annaorysiak.github.io/battleship/",
+                "project_url_code": "https://github.com/AnnaOrysiak/battleship",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176_960_720.jpg"
+            },
+            {
+                "id": 2,
+                "project_name": "Study Time Counter",
+                "project_description": "Timetable learning and breaks - Pomodoro Clock Web App",
+                "project_url_live": "https://annaorysiak.github.io/counter/",
+                "project_url_code": "https://github.com/AnnaOrysiak/counter",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2018/09/23/13/54/hourglass-3697513__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/11/11/21/15/time-1817725_960_720.jpg"
+            },
+            {
+                "id": 3,
+                "project_name": "Usługi geodezyjne i kartograficzne",
+                "project_description": "Small buisness page",
+                "project_url_live": "https://annaorysiak.github.io/ugik/",
+                "project_url_code": "https://github.com/AnnaOrysiak/ugik",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2013/12/22/17/29/surveying-232550__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2013/12/22/17/29/surveying-232550_960_720.jpg"
+            },
+            {
+                "id": 4,
+                "project_name": "Sensitive - stories (under reconstruction)",
+                "project_description": "The project allows adding, editing and deleting content, registering and logging in users (jQuery, Bootstrap, PHP and MySQL)",
+                "project_url_live": "",
+                "project_url_code": "https://github.com/AnnaOrysiak/sensitive",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png"
+            }
+        ],
+        "contact": "Contact",
+        "contact_invitation": "Feel free to contact me",
+        "your_name": "Your name",
+        "your_email": "Your e-mail address",
+        "your_message": "Your message",
+        "send_message": "Send"
+    }
+
+]
