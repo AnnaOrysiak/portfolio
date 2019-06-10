@@ -1,30 +1,16 @@
 import React from 'react';
 import '../style/project.css';
 
-class Project extends React.Component {
+const Project = (props) => {
 
-  state = {
-    id: this.props.properties.id,
-    project_name: this.props.properties.project_name,
-    project_description: this.props.properties.project_description,
-    project_url_live: this.props.properties.project_url_live,
-    project_url_code: this.props.properties.project_url_code,
-    urlMobile: this.props.properties.project_img_mobile,
-    urlDesktop: this.props.properties.project_img_desktop,
-    mobile: this.props.mobile
+ const bgImg = {
+    backgroundImage: `url(${props.mobile ? props.properties.project_img_mobile : props.properties.project_img_desktop})`
   }
 
-  bgImg = {
-    backgroundImage: `url(${this.state.mobile ? this.state.urlMobile : this.state.urlDesktop})`
-  }
+  const {id, project_name, project_description, project_url_live, project_url_code} = props.properties;
 
-  render() {
-
-    const { id, project_name, project_description, project_url_live, project_url_code } = this.state;
-
-    return (
-
-      <div className='projectArea' style={this.bgImg}>
+  return ( 
+      <div className='projectArea' style={bgImg}>
         <span className='projectId'>{id}</span>
         <h4 className='projectTitle'>{project_name}</h4>
         <p className='projectDescription'>{project_description}</p>
@@ -34,8 +20,6 @@ class Project extends React.Component {
         </div>
       </div >
 
-    );
-  }
+   );
 }
-
 export default Project;

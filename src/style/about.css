@@ -1,5 +1,5 @@
 .myPhoto {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 200px;
   height: 200px;
   background: url("../images/AO.png") gray;
@@ -14,7 +14,7 @@
   width: 100%;
   min-height: 50px;
   margin: 30px 0;
-  padding: 40px 20px;
+  padding: 40px 40px;
 }
 
 .skills {
@@ -62,4 +62,20 @@
   text-align: justify;
   padding: 10px 0;
   text-indent: 1.5rem;
+}
+
+@media(min-width:1024px) {
+  .skills,
+.introduction {
+  padding: 40px 10rem;
+}
+
+.introduction {
+  line-height: 2;
+}
+
+.skillset>* {
+  padding: 2rem;
+}
+
 }

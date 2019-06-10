@@ -306,6 +306,8 @@ nav>* {
   .active nav {
     top: 0;
     left: 0;
+    padding: 0;
+    height: 50px;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;

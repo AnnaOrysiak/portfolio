@@ -1,3 +1,28 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  padding: 50px 0 0;
+}
+
+.logoOut {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--main-color);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: pulse 3.6s 1s ease-in-out infinite;
+}
+
 .logo {
   position: relative;
   min-width: 200px;
@@ -7,7 +32,6 @@
   background: var(--main-color);
   border: none;
   border-radius: 50%;
-  overflow: hidden;
   animation: enter 2s ease-in-out both;
 }
 
@@ -63,16 +87,151 @@
   animation: none;
 }
 
+.logoName {
+  width: 100%;
+  text-align: center;
+}
+
+.logoNameDark {
+  color: var(--main-color);
+}
+
+.letter {
+  display: inline-block;
+		transform: scale(0);
+		animation: pop-up .25s forwards;		
+	}
+
+h1 .letter:nth-child(1) {
+  animation-delay: 2.05s;
+}
+h1 .letter:nth-child(2) {
+  animation-delay: 2.1s;
+}
+h1 .letter:nth-child(3) {
+  animation-delay: 2.15s;
+}
+h1 .letter:nth-child(4) {
+  animation-delay: 2.2s;
+}
+h1 .letter:nth-child(5) {
+  animation-delay: 2.25s;
+}
+h1 .letter:nth-child(6) {
+  animation-delay: 2.3s;
+}
+h1 .letter:nth-child(7) {
+  animation-delay: 2.35s;
+}
+h1 .letter:nth-child(8) {
+  animation-delay: 2.4s;
+}
+h1 .letter:nth-child(9) {
+  animation-delay: 2.45s;
+}
+h1 .letter:nth-child(10) {
+  animation-delay: 2.5s;
+}
+h1 .letter:nth-child(11) {
+  animation-delay: 2.55s;
+}
+h1 .letter:nth-child(12) {
+  animation-delay: 2.6s;
+}
+
+
+h2 .letter:nth-child(1) {
+  animation-delay: 3.05s;
+}
+h2 .letter:nth-child(2) {
+  animation-delay: 3.1s;
+}
+h2 .letter:nth-child(3) {
+  animation-delay: 3.15s;
+}
+h2 .letter:nth-child(4) {
+  animation-delay: 3.2s;
+}
+h2 .letter:nth-child(5) {
+  animation-delay: 3.25s;
+}
+h2 .letter:nth-child(6) {
+  animation-delay: 3.3s;
+}
+h2 .letter:nth-child(7) {
+  animation-delay: 3.35s;
+}
+h2 .letter:nth-child(8) {
+  animation-delay: 3.4s;
+}
+h2 .letter:nth-child(9) {
+  animation-delay: 3.45s;
+}
+h2 .letter:nth-child(10) {
+  animation-delay: 3.5s;
+}
+h2 .letter:nth-child(11) {
+  animation-delay: 3.55s;
+}
+h2 .letter:nth-child(12) {
+  animation-delay: 3.6s;
+}
+h2 .letter:nth-child(13) {
+  animation-delay: 3.65s;
+}
+h2 .letter:nth-child(14) {
+  animation-delay: 3.7s;
+}
+h2 .letter:nth-child(15) {
+  animation-delay: 3.75s;
+}
+h2 .letter:nth-child(16) {
+  animation-delay: 3.8s;
+}
+h2 .letter:nth-child(17) {
+  animation-delay: 3.85s;
+}
+h2 .letter:nth-child(18) {
+  animation-delay: 3.9s;
+}
+
+
 @keyframes enter {
+  from {
+    opacity: 1;
+  transform: scale(0)
+  }
+ to {
+   opacity: 1;
+transform: scale(1.2)
+  }
+}
+
+@keyframes pulse {
   0% {
-    transform: rotate(-1800deg) scale(0)
+transform: translate(-50%, -50%) scale(1);
+opacity: 1;
   }
-
-  70% {
-    transform: rotate(0deg) scale(1.2)
+  20% {
+transform: translate(-50%, -50%) scale(1.5);
+opacity: 0;
   }
-
   100% {
-    transform: rotate(0deg) scale(1)
+transform: translate(-50%, -50%) scale(1.5);
+opacity: 0;
   }
+
+}
+
+@keyframes pop-up {
+  0%{transform: scale(0) translateY(-10px); opacity: 0;}
+	80%{transform: scale(1.2) translateY(-2px); opacity: .8;}
+	100%{transform: scale(1) translateY(0px); opacity: 1;}
+}
+
+
+@media(min-height: 600px) {
+.logoNameDark {
+  padding-bottom: 2rem;
+}
 }

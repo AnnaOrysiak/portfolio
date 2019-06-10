@@ -24,6 +24,7 @@
 }
 
 .contactHeader {
+  padding: 40px 0 20px;
   text-align: center;
 }
 
@@ -34,12 +35,14 @@
   align-items: center;
   max-width: 100%;
   min-height: 400px;
+  padding: 20px 0;
 }
 
 .contactForm label {
   display: block;
-  padding: 10px 0;
+  padding: 20px 0 5px;
   width: 66%;
+  font-size: .8rem;
 }
 
 .name,
@@ -52,6 +55,7 @@
   border: 2px solid transparent;
   border-bottom: 2px solid var(--main-color);
   background: none;
+  font-size: 1rem;
 }
 
 .message {
@@ -65,13 +69,9 @@
   outline: none;
 }
 
-.name:valid,
-.email:valid {
-  border-bottom-color: limegreen;
-}
-
-.message:valid {
-  border-color: limegreen;
+.error {
+  color: red;
+  font-size: .8rem;
 }
 
 .formButton {
@@ -90,6 +90,23 @@
 .formButton:hover {
   background: var(--main-color);
   color: white;
+}
+
+.red,
+.green {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.red {
+  background: darkred;
+}
+
+.green { 
+  background: green;
 }
 
 @media(min-width:1024px) {

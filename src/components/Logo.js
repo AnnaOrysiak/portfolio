@@ -3,11 +3,12 @@ import '../style/logo.css';
 
 const Logo = (props) => {
   return (
+    
     <div className={props.small ? 'logo small' : 'logo'} >
+    <div className="logoOut"></div>
       <div className="logoO"></div>
       <div className="logoA"></div>
     </div>
-
   );
 }
 

@@ -1,0 +1,9 @@
+footer {
+  padding: 20px;
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+}
+.navy {
+  color: var(--dark-main-color);
+}

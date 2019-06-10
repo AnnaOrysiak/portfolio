@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../style/portfolio.css'
+import '../style/main.css'
 
 import Navigation from './Navigation';
 import Header from './Header';
@@ -39,11 +39,6 @@ class Portfolio extends Component {
       this.setState({ mobile: true })
     }
   }
-
-  playAnimation = () => {
-    console.log("Animacja startowa");
-  }
-
   naviHandler = () => {
     this.setState(prevState => ({ menuActive: !prevState.menuActive })
     )
@@ -52,8 +47,6 @@ class Portfolio extends Component {
 
   langHandler = (e) => {
     const language = e.target.value;
-    console.log("włączam język: ", language);
-
     this.setState({ language });
   }
 
@@ -63,20 +56,15 @@ class Portfolio extends Component {
   }
 
   componentDidMount() {
-    // pobieramy dane (content)
+    // GET DATA (content)
     this.getData();
-
-    // tutaj sprawdzamy typ urządzenia: mobile/desktop (mobile)
+    // CHECK DEVICE: mobile/desktop (mobile)
     this.checkDevice();
-
-    // tutaj włączamy animację startową
-    this.playAnimation();
-
     window.addEventListener('scroll', this.handleScroll);
   }
 
   componentDidUpdate() {
-    // sprawdzamy czy zmienił się status menu albo język
+    // CHECK LANGUAGE STATUS 
     if (this.state.language !== this.state.content.language) {
       this.getData(this.state.language);
     }
@@ -93,7 +81,7 @@ class Portfolio extends Component {
         <main>
           <Projects content={content} mobile={mobile} />
           <About content={content} />
-          <Contact content={content} />
+          <Contact content={content} language={language} />
         </main>
         <Footer />
       </>
