@@ -32,12 +32,12 @@ class ContactForm extends Component {
     let formIsValid = true
     const lang = this.props.language
 
-    if (!this.state.name || this.state.name.length < 3) {
-      errors.name = lang === "pl" ? 'Imię musi zawierać więcej niż 3 znaki' : 'Your name should consist of at least 3 characters'
+    if (!this.state.name || this.state.name.length < 3 || this.state.name.length > 25) {
+      errors.name = lang === "pl" ? 'Imię musi zawierać od 3 do 25 znaków' : 'Your name should be between 3 and 25 characters long'
       formIsValid = false
     }
-    if (!this.state.message || this.state.message.length < 10) {
-      errors.message = lang === "pl" ? 'Wiadomość musi zawierać więcej niż 10 znaków' : 'Your message should consist of at least 10 characters'
+    if (!this.state.message || this.state.message.length < 10 || this.state.message.length > 1000) {
+      errors.message = lang === "pl" ? 'Wiadomość musi zawierać od 10 do 1000 znaków' : 'Your message should consist between 10 and 1000 characters'
       formIsValid = false
     }
     if (!this.state.email || this.state.email.length < 3) {
@@ -82,6 +82,10 @@ class ContactForm extends Component {
         messageStatus: successMessage,
         color: 'green'
       })
+
+      setTimeout(() => {
+        this.setState({ messageStatus: false })
+      }, 3000)
     }
 
     const sendingFailed = () => {
@@ -89,6 +93,10 @@ class ContactForm extends Component {
         messageStatus: failMessage,
         color: 'red'
       })
+
+      setTimeout(() => {
+        this.setState({ messageStatus: false })
+      }, 3000)
     }
 
     emailjs.send('gmail', 'contact_form', templateParams, 'user_1JHrohf0HBj65A9oo5yHu')
@@ -104,11 +112,15 @@ class ContactForm extends Component {
         console.log(err);
       })
 
-    this.setState({
-      name: '',
-      email: '',
-      message: ''
-    })
+    console.log(this);
+    setTimeout(() => {
+      this.setState({
+        name: '',
+        email: '',
+        message: ''
+      })
+    }, 3000);
+
   }
 
   render() {
@@ -119,16 +131,16 @@ class ContactForm extends Component {
 
       <form className='contactForm'>
         <label htmlFor="name">{your_name}:</label>
-        <input type="text" className="name" name="name" id="name" placeholder={your_name} required onChange={this.handleInputChange} />
+        <input type="text" className="name" name="name" id="name" placeholder={your_name} required onChange={this.handleInputChange} value={this.state.name} />
         {this.state.errors.name ? <span className="error"> {this.state.errors.name}</span> : ""}
 
         <label htmlFor="email">{your_email}:</label>
-        <input type="email" className="email" name="email" id="email" placeholder={your_email} required onChange={this.handleInputChange} />
-                {this.state.errors.email ? <span className="error"> {this.state.errors.email}</span> : ""}
+        <input type="email" className="email" name="email" id="email" placeholder={your_email} required onChange={this.handleInputChange} value={this.state.email} />
+        {this.state.errors.email ? <span className="error"> {this.state.errors.email}</span> : ""}
 
         <label htmlFor="message">{your_message}:</label>
-        <textarea className="message" name="message" id="message" cols="30" rows="10" placeholder={your_message} required onChange={this.handleInputChange}></textarea>
-                {this.state.errors.message ? <span className="error"> {this.state.errors.message}</span> : ""}
+        <textarea className="message" name="message" id="message" cols="30" rows="10" placeholder={your_message} required onChange={this.handleInputChange} value={this.state.message}></textarea>
+        {this.state.errors.message ? <span className="error"> {this.state.errors.message}</span> : ""}
 
         <button className="formButton" type="submit" onClick={this.sentMessage} >{send_message}</button>
         {this.state.messageStatus ? <span className={this.state.color}> {this.state.messageStatus}</span> : ""}
