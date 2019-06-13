@@ -26,7 +26,9 @@
 
         "introduction_1": "Nazywam się Anna Orysiak. Przygodę z programowaniem rozpoczęłam od nauki C++, potem pojawiły się technologie Webowe - PHP i MySQL, aż wreszcie skupiłam się na frontendzie. Czuję silną potrzebę ciągłego rozwoju, dlatego, uwielbiam uczyć się nowych rzeczy.",
         "introduction_2": "Wolne chwile spędzam czytając dobrą książkę w hamaku, organizując rodzinną eskapadę lub próbując rozwiązać łamigłówki kolejnego Pokoju Ucieczki (Escape Room). Interesuję się także Kulturą Dalekiego Wschodu.",
-        "hobby": ["hobby"],
+        "hobby_anime": "Obejrzanych serii anime",
+        "hobby_fantasy": "Przeczytanych książek fantasy",
+        "hobby_er": "Odwiedzonych pokoi (Escape Room)",
         "portfolio": "Moje projekty",
         "projects": [{
                 "id": 1,
@@ -100,7 +102,9 @@
 
         "introduction_1": "I'm Anna Orysiak. I started the adventure with programming from learning C ++, then came the Web technologies - PHP and MySQL, and finally I focused on the frontend. I feel a strong need for continuous development, that's why I love learning new things.",
         "introduction_2": "I spend my free time reading a good book in a hammock, organizing a family escapade or trying to solve the puzzles of the next Escape Room. I am also interested in Far Eastern Culture.",
-        "hobby": ["hobby"],
+        "hobby_anime": "Watched anime series",
+        "hobby_fantasy": "Read fantasy books",
+        "hobby_er": "Escape Rooms played",
         "portfolio": "My projects",
         "projects": [{
                 "id": 1,
