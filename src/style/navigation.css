@@ -282,12 +282,12 @@ nav>* {
   .naviList {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 1024px;
+    width: 650px;
     padding: 0;
   }
 

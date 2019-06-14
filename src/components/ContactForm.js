@@ -112,7 +112,6 @@ class ContactForm extends Component {
         console.log(err);
       })
 
-    console.log(this);
     setTimeout(() => {
       this.setState({
         name: '',

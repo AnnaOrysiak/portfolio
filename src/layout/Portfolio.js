@@ -39,8 +39,8 @@ class Portfolio extends Component {
       this.setState({ mobile: true })
     }
   }
+
   naviHandler = (e) => {
-    console.log(e.target.className);
     if (e.target.className === "naviBurger" || this.state.mobile) {
       this.setState(prevState => ({ menuActive: !prevState.menuActive })
       )

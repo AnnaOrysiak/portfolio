@@ -1,11 +1,12 @@
 import React from 'react';
 import '../style/about.css';
+import Hobby from '../components/Hobby';
 
 const About = (props) => {
 
-  const { about, soft_skills, skill_team, skill_communication, skill_tasks, skill_learn, skill_nonconflicting, 
-  hard_skills,  skill_html, skill_css, skill_js, skill_git, skill_wp, skill_ps, skill_react, skill_sass, skill_bootstrap, skill_nodejs, skill_mongodb, skill_express,
-   introduction_1, introduction_2, hobby } = props.content;
+  const { about, soft_skills, skill_team, skill_communication, skill_tasks, skill_learn, skill_nonconflicting,
+    hard_skills, skill_html, skill_css, skill_js, skill_git, skill_wp, skill_ps, skill_react, skill_sass, skill_bootstrap, skill_nodejs, skill_mongodb, skill_express,
+    introduction_1, introduction_2, hobby_anime, hobby_fantasy, hobby_er } = props.content;
 
   return (
     <>
@@ -16,7 +17,8 @@ const About = (props) => {
         <div className="introduction">
           <p className="aboutMeIntro">{introduction_1}</p>
           <p className="aboutMeIntro">{introduction_2}</p>
-          <p className="aboutMeHobby">{hobby}</p>
+          <Hobby hobby_anime={hobby_anime} hobby_fantasy={hobby_fantasy} hobby_er={hobby_er} />
+
         </div>
 
         <div className="skills">
@@ -35,10 +37,10 @@ const About = (props) => {
           </div>
 
           <br /><br />
-          
+
           <h4 className="skillsHeader">{hard_skills}</h4>
           <div className="skillset">
-          
+
             <i className="devicon-html5-plain"></i>
             <span className="description">{skill_html}</span>
             <i className="devicon-css3-plain"></i>
