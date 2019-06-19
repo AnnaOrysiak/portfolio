@@ -17,7 +17,7 @@ const About = (props) => {
         <div className="introduction">
           <p className="aboutMeIntro">{introduction_1}</p>
           <p className="aboutMeIntro">{introduction_2}</p>
-          <Hobby hobby_anime={hobby_anime} hobby_fantasy={hobby_fantasy} hobby_er={hobby_er} />
+          <Hobby hobby_anime={hobby_anime} hobby_fantasy={hobby_fantasy} hobby_er={hobby_er} counter={props.counter} />
 
         </div>
 
