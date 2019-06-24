@@ -1,18 +1,14 @@
 import React from 'react';
-import er from '../images/esroom.png';
-import anime from '../images/anime.png';
-import fantasy from '../images/fantasy.png';
+import { InView } from 'react-intersection-observer';
 
 const Hobby = (props) => {
 
-  const { hobby_anime, hobby_fantasy, hobby_er } = props;
+  const { desc, img, alt, value } = props.properties;
 
-  let counterOff = false;
+  let counter = (counterOn = false) => {
 
-  let counter = () => {
-    if (!counterOff) {
+    if (counterOn) {
       const hobbyNumbers = document.getElementsByClassName('number');
-      let counterOn = true;
 
       const checkCounter = () => {
         if (counterOn) {
@@ -30,44 +26,30 @@ const Hobby = (props) => {
             else if (hobbyValue < 100 && hobbyValue > 10) intervalTime = 30;
             else intervalTime = 200;
 
-            currentValue < hobbyValue ? counter = setInterval(count, intervalTime) : clearInterval(counter);
+            if (currentValue < hobbyValue) {
+              if (currentValue === 0) {
+                counter = setInterval(count, intervalTime)
+              }
+            } else { clearInterval(counter) }
+
           }
-          counterOn = false;
         }
-        counterOff = !counterOn;
+
+        counterOn = false;
       }
       checkCounter();
     }
   }
 
   return (
-    <article className="mainStats" id="mainStats" onMouseDown={counter}>
-      <div className="stats">
-        <div className="statImg">
-          <img src={er} alt="Sherlock" />
-        </div>
-        <button className="number" value='6' disabled>0</button>
-        <p className="hobby">{hobby_er}</p>
+    <InView as="div" className="stats" onChange={counter} triggerOnce={true} threshold={.9}>
+      <div className="statImg">
+        <img src={img} alt={alt} />
       </div>
-
-      <div className="stats">
-        <div className="statImg">
-          <img src={anime} alt="Sailor Moon" />
-        </div>
-        <button className="number" value='239' disabled>0</button>
-        <p className="hobby">{hobby_anime}</p>
-      </div >
-
-      <div className="stats">
-        <div className="statImg">
-          <img src={fantasy} alt="Dragon" />
-        </div>
-        <button className="number" value='99' disabled>0</button>
-        <p className="hobby">{hobby_fantasy}</p>
-      </div >
-    </article >
-
-  );
+      <button className="number" value={value} disabled>0</button>
+      <p className="hobby">{desc}</p>
+    </InView>
+  )
 }
 
 export default Hobby;
