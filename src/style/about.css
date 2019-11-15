@@ -57,7 +57,6 @@
   -moz-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s;
-  background-color: var(--dark-main-color);
 }
 
 .skillset i:hover+span {
@@ -89,6 +88,14 @@
   max-height: 100px;
 }
 
+.number:disabled {
+  border: none;
+  background: none;
+  width: 60px;
+  font-size: 2rem;
+  color: var(--dark-color);
+}
+
 .hobby {
   font-size: .8rem;
 }
@@ -98,6 +105,7 @@
   .mainStats {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .stats {

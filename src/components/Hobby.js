@@ -1,45 +1,53 @@
 import React from 'react';
-import er from '../images/esroom.png';
-import anime from '../images/anime.png';
-import fantasy from '../images/fantasy.png';
-
-const counter = () => {
-  console.log("działam");
-}
+import { InView } from 'react-intersection-observer';
 
 const Hobby = (props) => {
 
-  const { hobby_anime, hobby_fantasy, hobby_er } = props
+  const { id, desc, img, alt, value } = props.properties;
+
+  let counter = (active, e) => {
+
+    if (active) {
+
+      const currentHobby = document.getElementById(e);
+      const hobbyValue = currentHobby.value;
+      let currentValue = 0;
+      let intervalTime = 200;
+
+      if (hobbyValue > 100) intervalTime = 20;
+      else if (hobbyValue < 100 && hobbyValue > 10) intervalTime = 30;
+      else intervalTime = 200;
+
+      let count = () => {
+
+        const checkCounter = () => {
+
+          if (currentValue < hobbyValue) currentValue++;
+          currentHobby.textContent = currentValue;
+
+          if (currentValue < hobbyValue) {
+            if (currentValue <= 1) {
+              count = setInterval(count, intervalTime)
+            }
+          } else { clearInterval(count) }
+        }
+        checkCounter();
+
+      }
+      count();
+      active = false;
+    }
+  }
 
   return (
-
-    <article className="mainStats" id="mainStats" onMouseEnter={counter}>
-      <div className="stats">
-        <div className="statImg">
-          <img src={er} alt="Sherlock" />
-        </div>
-        <h4 className="number" value='6'>6</h4>
-        <p className="hobby">{hobby_er}</p>
+    <div className="stats">
+      <div className="statImg">
+        <img src={img} alt={alt} />
       </div>
-
-      <div className="stats">
-        <div className="statImg">
-          <img src={anime} alt="Sailor Moon" />
-        </div>
-        <h4 className="number" value='239'>239</h4>
-        <p className="hobby">{hobby_anime}</p>
-      </div >
-
-      <div className="stats">
-        <div className="statImg">
-          <img src={fantasy} alt="Dragon" />
-        </div>
-        <h4 className="number" value='99'>99</h4>
-        <p className="hobby">{hobby_fantasy}</p>
-      </div >
-    </article >
-
-  );
+      <InView as="button" className="number" id={id} onChange={(inView) => counter(inView, id)} triggerOnce={true} threshold={.9} value={value} disabled>0</InView>
+      <p className="hobby">{desc}</p>
+    </div>
+  )
 }
 
 export default Hobby;
