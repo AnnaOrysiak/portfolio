@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Montserrat&display=swap&subset=latin-ext');
 
 *,
 *::before,
@@ -37,16 +37,7 @@ h3 {
   padding-bottom: 3rem;
 }
 
-h3::first-letter {
-  display: block;
-  color: white;
-  border-radius: 50%;
-  font-size: 2rem;
-  line-height: 2rem;
-  padding: 0 .2rem 0 1rem;
-}
-
-h3::before {
+h3::after {
   content: "";
   display: block;
   position: absolute;
@@ -58,8 +49,22 @@ h3::before {
   z-index: -1;
 }
 
+h3:first-letter {
+  display: block;
+  color: white;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0 .2rem 0 1.1rem;
+  letter-spacing: 5px;
+}
+
 h4 {
   font-family: 'Comfortaa', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
 }

@@ -14,14 +14,14 @@ const Hobbies = (props) => {
       desc: hobby_er,
       img: er,
       alt: "Sherlock",
-      value: 6
+      value: 9
     },
     {
       id: 2,
       desc: hobby_anime,
       img: anime,
       alt: "Sailor Moon",
-      value: 239
+      value: 249
     },
     {
       id: 3,
