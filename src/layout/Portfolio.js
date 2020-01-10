@@ -59,15 +59,12 @@ class Portfolio extends Component {
   }
 
   componentDidMount() {
-    // GET DATA (content)
     this.getData();
-    // CHECK DEVICE: mobile/desktop (mobile)
     this.checkDevice();
     window.addEventListener('scroll', this.handleScroll);
   }
 
   componentDidUpdate() {
-    // CHECK LANGUAGE STATUS 
     if (this.state.language !== this.state.content.language) {
       this.getData(this.state.language);
     }

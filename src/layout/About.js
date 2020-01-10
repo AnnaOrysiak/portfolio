@@ -24,6 +24,7 @@ const About = (props) => {
         <div className="skills">
           <h4 className="skillsHeader">{soft_skills}</h4>
           <div className="skillset">
+            <span className="description none">najedź na ikonkę</span>
             <i className="fas fa-users"></i>
             <span className="description">{skill_team}</span>
             <i className="fas fa-comments"></i>
@@ -34,13 +35,14 @@ const About = (props) => {
             <span className="description">{skill_learn}</span>
             <i className="fas fa-hands-helping"></i>
             <span className="description">{skill_nonconflicting}</span>
+
           </div>
 
           <br /><br />
 
           <h4 className="skillsHeader">{hard_skills}</h4>
           <div className="skillset">
-
+            <span className="description none">najedź na ikonkę</span>
             <i className="devicon-html5-plain"></i>
             <span className="description">{skill_html}</span>
             <i className="devicon-css3-plain"></i>

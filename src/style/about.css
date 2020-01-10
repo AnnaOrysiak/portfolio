@@ -51,6 +51,7 @@
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   color: white;
+  background: var(--dark-main-color);
   opacity: 0;
   font-size: 1rem;
   -webkit-transition: opacity .3s;
@@ -61,6 +62,11 @@
 
 .skillset i:hover+span {
   opacity: 1;
+}
+
+.description.none {
+  opacity: 1;
+  font-size: .8rem;
 }
 
 .aboutMeIntro {

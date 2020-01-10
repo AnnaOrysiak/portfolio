@@ -19,7 +19,7 @@ class Contact extends Component {
 
         <h4 className="contactHeader">{contact_invitation}</h4>
 
-        <ContactForm id="mainContactForm" className="contactForm" name="contactForm" method="post" action="" props={this.props.content} language={this.props.language} />
+        <ContactForm id="mainContactForm" className="contactForm" name="contactForm" method="post" action="" content={this.props.content} language={this.props.language} />
 
       </div>
     );

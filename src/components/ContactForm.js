@@ -60,6 +60,14 @@ class ContactForm extends Component {
 
   }
 
+  clearForm = () => {
+    this.setState({
+      name: '',
+      email: '',
+      message: ''
+    })
+  }
+
   sentMessage = (e) => {
     e.preventDefault()
     if (!this.validateMail()) {
@@ -112,19 +120,13 @@ class ContactForm extends Component {
         console.log(err);
       })
 
-    setTimeout(() => {
-      this.setState({
-        name: '',
-        email: '',
-        message: ''
-      })
-    }, 3000);
+    setTimeout(this.clearForm, 3000);
 
   }
 
   render() {
 
-    const { your_name, your_email, your_message, send_message } = this.props.props;
+    const { your_name, your_email, your_message, send_message } = this.props.content;
 
     return (
 
