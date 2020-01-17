@@ -13,7 +13,6 @@ class Portfolio extends Component {
     language: "pl",
     content: {},
     mobile: true,
-    menuActive: false,
     scrollY: 0
   }
 
@@ -41,10 +40,9 @@ class Portfolio extends Component {
   }
 
   naviHandler = (e) => {
-    if (e.target.className === "naviBurger" || this.state.mobile) {
-      this.setState(prevState => ({ menuActive: !prevState.menuActive })
-      )
-      document.querySelector(".navigation").classList.toggle("active")
+    if (e.target.className === "naviBurger" || e.target.className === 'naviBurgerSpan') {
+      console.log(e.target, e.target.parentElement);
+      document.querySelector(".navigation").classList.toggle("active");
     }
   }
 
