@@ -41,7 +41,6 @@ class Portfolio extends Component {
 
   naviHandler = (e) => {
     if (e.target.className === "naviBurger" || e.target.className === 'naviBurgerSpan') {
-      console.log(e.target, e.target.parentElement);
       document.querySelector(".navigation").classList.toggle("active");
     }
   }
