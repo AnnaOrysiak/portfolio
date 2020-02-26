@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import '../style/main.css';
-
 import Navigation from './Navigation';
 import Header from './Header';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
+import '../style/main.css';
+import content from '../content.json';
 
 class Portfolio extends Component {
   state = {
@@ -17,17 +17,8 @@ class Portfolio extends Component {
   };
 
   getData = (lang = 'pl') => {
-    return fetch('./content.json')
-      .then(response => response.json())
-      .then(content => {
-        const translation = content.filter(
-          element => element.language === lang
-        );
-        this.setState({ content: translation[0] });
-      })
-      .catch(error => {
-        console.log('Błąd! ', error);
-      });
+    const translation = content.filter(element => element.language === lang);
+    this.setState({ content: translation[0] });
   };
 
   checkDevice() {

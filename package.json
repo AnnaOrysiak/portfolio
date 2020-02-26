@@ -5,12 +5,12 @@
   "private": true,
   "dependencies": {
     "emailjs-com": "2.3.2",
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-intersection-observer": "^8.23.0",
-    "react-scripts": "3.0.1",
-    "react-scroll-into-view": "^1.5.0"
+    "gh-pages": "^2.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-intersection-observer": "^8.26.0",
+    "react-scripts": "^3.4.0",
+    "react-scroll-into-view": "^1.8.0"
   },
   "scripts": {
     "predeploy": "npm run build",
