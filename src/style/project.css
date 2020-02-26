@@ -25,6 +25,7 @@
   -o-transition: transform .4s ease-in-out;
   transition: transform .4s ease-in-out;
   z-index: 0;
+  border-bottom: 1px solid var(--main-color);
 }
 
 .projectId {
@@ -179,6 +180,11 @@
 }
 
 @media(min-width:1024px) {
+
+  .projectArea::before {
+    border-bottom: none;
+  }
+
   .projectTitle {
     left: 10rem;
   }

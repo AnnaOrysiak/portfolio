@@ -33,7 +33,7 @@
         "projects": [{
                 "id": 1,
                 "project_name": "Battleship",
-                "project_description": "Prosty projekt popularnej gry w statki. Create React App",
+                "project_description": "Prosty projekt popularnej gry w statki. Create React App.",
                 "project_url_live": "https://annaorysiak.github.io/battleship/",
                 "project_url_code": "https://github.com/AnnaOrysiak/battleship",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
@@ -42,7 +42,7 @@
             {
                 "id": 2,
                 "project_name": "Study Time Counter",
-                "project_description": "Licznik czasu nauki i przerwy - Web App typu Pomodoro Clock",
+                "project_description": "Licznik czasu nauki i przerwy - Web App typu Pomodoro Clock.",
                 "project_url_live": "https://annaorysiak.github.io/counter/",
                 "project_url_code": "https://github.com/AnnaOrysiak/counter",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2018/09/23/13/54/hourglass-3697513__340.jpg",
@@ -51,7 +51,7 @@
             {
                 "id": 3,
                 "project_name": "Usługi geodezyjne i kartograficzne",
-                "project_description": "Strona-wizytówka firmy",
+                "project_description": "Strona-wizytówka firmy.",
                 "project_url_live": "https://annaorysiak.github.io/ugik/",
                 "project_url_code": "https://github.com/AnnaOrysiak/ugik",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2013/12/22/17/29/surveying-232550__340.jpg",
@@ -60,11 +60,30 @@
             {
                 "id": 4,
                 "project_name": "Sensitive - opowiadania (w przebudowie)",
-                "project_description": "Projekt umożliwia dodawanie, edycję i usuwanie treści, rejestrację i logowanie użytkowników (jQuery, Bootstrap, PHP oraz MySQL)",
-                "project_url_live": "",
-                "project_url_code": "https://github.com/AnnaOrysiak/sensitive",
+                "project_description": "Projekt umożliwia dodawanie, edycję i usuwanie treści, rejestrację i logowanie użytkowników.",
+                "project_url_live": "https://annaorysiak.github.io/sensitive-cra/",
+                "project_url_code": "https://github.com/AnnaOrysiak/sensitive-cra",
+                "project_url_code_old": "https://github.com/AnnaOrysiak/sensitive",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png",
                 "project_img_desktop": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png"
+            },
+            {
+                "id": 5,
+                "project_name": "Panel logowania użytkownika",
+                "project_description": "Projekt panelu logowania z walidacją inputów.",
+                "project_url_live": "https://annaorysiak.github.io/customer-login/",
+                "project_url_code": "https://github.com/AnnaOrysiak/customer-login",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/07/31/09/03/laptop-868816__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/07/31/09/03/laptop-868816_960_720.jpg"
+            },
+            {
+                "id": 6,
+                "project_name": "Gra w życie",
+                "project_description": "Automat komórkowy na skończonej planszy.",
+                "project_url_live": "https://annaorysiak.github.io/game-of-life/",
+                "project_url_code": "https://github.com/AnnaOrysiak/game-of-life",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666_960_720.jpg"
             }
         ],
         "contact": "Kontakt",
@@ -109,7 +128,7 @@
         "projects": [{
                 "id": 1,
                 "project_name": "Battleship",
-                "project_description": "A simple project of the popular game. Create React App",
+                "project_description": "A simple project of the popular game. Create React App.",
                 "project_url_live": "https://annaorysiak.github.io/battleship/",
                 "project_url_code": "https://github.com/AnnaOrysiak/battleship",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
@@ -118,7 +137,7 @@
             {
                 "id": 2,
                 "project_name": "Study Time Counter",
-                "project_description": "Time keeping tool for efficient learning based on the Pomodoro method - Pomodoro Clock Web App",
+                "project_description": "Time keeping tool for efficient learning based on the Pomodoro method - Pomodoro Clock Web App.",
                 "project_url_live": "https://annaorysiak.github.io/counter/",
                 "project_url_code": "https://github.com/AnnaOrysiak/counter",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2018/09/23/13/54/hourglass-3697513__340.jpg",
@@ -127,7 +146,7 @@
             {
                 "id": 3,
                 "project_name": "Usługi geodezyjne i kartograficzne",
-                "project_description": "Website for a small buisness",
+                "project_description": "Website for a small buisness.",
                 "project_url_live": "https://annaorysiak.github.io/ugik/",
                 "project_url_code": "https://github.com/AnnaOrysiak/ugik",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2013/12/22/17/29/surveying-232550__340.jpg",
@@ -136,11 +155,30 @@
             {
                 "id": 4,
                 "project_name": "Sensitive - stories (under reconstruction)",
-                "project_description": "The project allows adding, editing and deleting content, registering and logging in users (jQuery, Bootstrap, PHP and MySQL)",
-                "project_url_live": "",
-                "project_url_code": "https://github.com/AnnaOrysiak/sensitive",
+                "project_description": "The project allows adding, editing and deleting content, registering and logging in users.",
+                "project_url_live": "https://annaorysiak.github.io/sensitive-cra/",
+                "project_url_code": "https://github.com/AnnaOrysiak/sensitive-cra",
+                "project_url_code_old": "https://github.com/AnnaOrysiak/sensitive",
                 "project_img_mobile": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png",
                 "project_img_desktop": "https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png"
+            },
+            {
+                "id": 5,
+                "project_name": "Customer Login Panel",
+                "project_description": "The project apply inputs validation.",
+                "project_url_live": "https://annaorysiak.github.io/customer-login/",
+                "project_url_code": "https://github.com/AnnaOrysiak/customer-login",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/07/31/09/03/laptop-868816__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/07/31/09/03/laptop-868816_960_720.jpg"
+            },
+            {
+                "id": 6,
+                "project_name": "Game of Life",
+                "project_description": "A cellular automaton on the finited grid.",
+                "project_url_live": "https://annaorysiak.github.io/game-of-life/",
+                "project_url_code": "https://github.com/AnnaOrysiak/game-of-life",
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666_960_720.jpg"
             }
         ],
         "contact": "Contact",

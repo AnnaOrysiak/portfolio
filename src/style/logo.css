@@ -224,6 +224,40 @@ h2 .letter:nth-child(18) {
 }
 
 
+.scrollDown {
+  position: relative;
+  width: 1px;
+  height: 15vh;
+  background-color: var(--main-color);
+}
+
+.scrollDown::before,
+.scrollDown::after {
+  content: "";
+  position: absolute;
+}
+
+.scrollDown::before {
+  bottom: 0;
+  width: 1vh;
+  height: 1vh;
+  border: 1px solid var(--main-color);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+/* .scrollDown::after {
+  content: "Scroll down";
+  bottom: 50%;
+  left: 1rem;
+  min-width: 15vh;
+  font-size: .8rem;
+  text-align: center;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: bottom;
+} */
+
 @keyframes enter {
   from {
     opacity: 1;
@@ -279,6 +313,21 @@ h2 .letter:nth-child(18) {
 }
 
 @media(max-width:1023px) and (orientation:landscape) {
+
+  .scrollDown {
+    height: 30vh;
+    transform: translate(45vw, -50%)
+  }
+
+  .scrollDown::before {
+    width: 1vw;
+    height: 1vw;
+  }
+
+  /* .scrollDown::after {
+    width: 25vh;
+  } */
+
   @keyframes enter {
     from {
       opacity: 1;
