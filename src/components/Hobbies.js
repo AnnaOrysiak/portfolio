@@ -4,8 +4,7 @@ import er from '../images/esroom.png';
 import anime from '../images/anime.png';
 import fantasy from '../images/fantasy.png';
 
-const Hobbies = (props) => {
-
+const Hobbies = props => {
   const { hobby_anime, hobby_fantasy, hobby_er } = props;
 
   const hobbies = [
@@ -13,21 +12,21 @@ const Hobbies = (props) => {
       id: 1,
       desc: hobby_er,
       img: er,
-      alt: "Sherlock",
-      value: 9
+      alt: 'Sherlock',
+      value: 10
     },
     {
       id: 2,
       desc: hobby_anime,
       img: anime,
-      alt: "Sailor Moon",
+      alt: 'Sailor Moon',
       value: 249
     },
     {
       id: 3,
       desc: hobby_fantasy,
       img: fantasy,
-      alt: "Dragon",
+      alt: 'Dragon',
       value: 99
     }
   ];
@@ -35,15 +34,16 @@ const Hobbies = (props) => {
   let hobbyList = [];
 
   if (hobbies) {
-    hobbyList = hobbies.map(hobby => <Hobby key={hobby.id} properties={hobby} />)
+    hobbyList = hobbies.map(hobby => (
+      <Hobby key={hobby.id} properties={hobby} />
+    ));
   }
 
   return (
-    <article className="mainStats" id="mainStats">
+    <article className='mainStats' id='mainStats'>
       {hobbyList}
-    </article >
-
+    </article>
   );
-}
+};
 
 export default Hobbies;

@@ -224,6 +224,37 @@ h2 .letter:nth-child(18) {
 }
 
 
+.scrollDown {
+  position: relative;
+  width: 1px;
+  height: 15vh;
+  background-color: var(--main-color);
+}
+
+.scrollDown::before,
+.scrollDown::after {
+  content: "";
+  position: absolute;
+}
+
+.scrollDown::before {
+  bottom: 0;
+  /* left: 50%; */
+  width: 1vh;
+  height: 1vh;
+  border: 1px solid var(--main-color);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.scrollDown::after {
+  content: "Scroll down";
+  bottom: 50%;
+  font-size: .8rem;
+  transform: translateX(-50%) rotate(-90deg);
+}
+
 @keyframes enter {
   from {
     opacity: 1;
