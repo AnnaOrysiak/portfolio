@@ -180,6 +180,7 @@
 }
 
 @media(min-width:1024px) {
+
   .projectArea::before {
     border-bottom: none;
   }
