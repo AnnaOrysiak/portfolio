@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../style/main.css'
+import '../style/main.css';
 
 import Navigation from './Navigation';
 import Header from './Header';
@@ -10,50 +10,56 @@ import Footer from './Footer';
 
 class Portfolio extends Component {
   state = {
-    language: "pl",
+    language: 'pl',
     content: {},
     mobile: true,
     scrollY: 0
-  }
+  };
 
-  getData = (lang = "pl") => {
+  getData = (lang = 'pl') => {
     return fetch('./content.json')
-      .then((response) => response.json())
-      .then((content) => {
-        const translation = content.filter(element => element.language === lang)
-        this.setState({ content: translation[0] })
+      .then(response => response.json())
+      .then(content => {
+        const translation = content.filter(
+          element => element.language === lang
+        );
+        this.setState({ content: translation[0] });
       })
-      .catch((error) => {
-        console.log("Błąd! ", error)
-      })
-  }
+      .catch(error => {
+        console.log('Błąd! ', error);
+      });
+  };
 
   checkDevice() {
-    const deviceWidth = (window.innerWidth > 0) ? window.innerWidth : "640";
-    const deviceHeight = (window.innerHeight > 0) ? window.innerHeight : "360";
+    const deviceWidth = window.innerWidth > 0 ? window.innerWidth : '640';
+    const deviceHeight = window.innerHeight > 0 ? window.innerHeight : '360';
 
     if (deviceHeight >= 768 && deviceWidth >= 1024) {
-      this.setState({ mobile: false })
+      this.setState({ mobile: false });
     } else {
-      this.setState({ mobile: true })
+      this.setState({ mobile: true });
     }
   }
 
-  naviHandler = (e) => {
-    if (e.target.className === "naviBurger" || e.target.className === 'naviBurgerSpan') {
-      document.querySelector(".navigation").classList.toggle("active");
+  naviHandler = e => {
+    if (
+      e.target.className === 'naviBurger' ||
+      e.target.className === 'naviBurgerSpan' ||
+      e.target.className.includes('naviListButton')
+    ) {
+      document.querySelector('.navigation').classList.toggle('active');
     }
-  }
+  };
 
-  langHandler = (e) => {
+  langHandler = e => {
     const language = e.target.value;
     this.setState({ language });
-  }
+  };
 
-  handleScroll = (e) => {
+  handleScroll = e => {
     const scrollY = window.scrollY;
     this.setState({ scrollY });
-  }
+  };
 
   componentDidMount() {
     this.getData();
@@ -68,12 +74,18 @@ class Portfolio extends Component {
   }
 
   render() {
-
     const { language, content, mobile, scrollY } = this.state;
 
     return (
       <>
-        <Navigation naviHandler={this.naviHandler} langHandler={this.langHandler} scrollHandler={this.scrollHandler} language={language} content={content} scrollY={scrollY} />
+        <Navigation
+          naviHandler={this.naviHandler}
+          langHandler={this.langHandler}
+          scrollHandler={this.scrollHandler}
+          language={language}
+          content={content}
+          scrollY={scrollY}
+        />
         <Header />
         <main>
           <Projects content={content} mobile={mobile} />
