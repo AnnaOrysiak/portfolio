@@ -94,7 +94,7 @@ nav>* {
 }
 
 .naviHeader:first-letter {
-  padding: 0 0 3rem 0.3rem;
+  padding: 0 0 3rem 0;
   margin-left: 0rem;
 }
 
