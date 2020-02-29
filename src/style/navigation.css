@@ -93,6 +93,10 @@ nav>* {
   color: white;
 }
 
+.naviHeader {
+  text-align: center;
+}
+
 .naviHeader:first-letter {
   padding: 0 0 3rem 0;
   margin-left: 0rem;
