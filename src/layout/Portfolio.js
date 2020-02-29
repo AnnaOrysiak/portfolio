@@ -80,7 +80,7 @@ class Portfolio extends Component {
         <Header />
         <main>
           <Projects content={content} mobile={mobile} />
-          <About content={content} scrollY={scrollY} />
+          <About content={content} scrollY={scrollY} mobile={mobile} />
           <Contact content={content} language={language} />
         </main>
         <Footer />

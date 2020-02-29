@@ -12,6 +12,7 @@ const About = props => {
     skill_learn,
     skill_nonconflicting,
     skills_prompt,
+    skills_prompt_mobile,
     hard_skills,
     skill_html,
     skill_css,
@@ -52,7 +53,9 @@ const About = props => {
         <div className='skills'>
           <h4 className='skillsHeader'>{soft_skills}</h4>
           <div className='skillset'>
-            <span className='description none'>{skills_prompt}</span>
+            <span className='description none'>
+              {props.mobile ? skills_prompt_mobile : skills_prompt}
+            </span>
             <i className='fas fa-users'></i>
             <span className='description'>{skill_team}</span>
             <i className='fas fa-comments'></i>
@@ -70,7 +73,9 @@ const About = props => {
 
           <h4 className='skillsHeader'>{hard_skills}</h4>
           <div className='skillset'>
-            <span className='description none'>{skills_prompt}</span>
+            <span className='description none'>
+              {props.mobile ? skills_prompt_mobile : skills_prompt}
+            </span>
             <i className='devicon-html5-plain'></i>
             <span className='description'>{skill_html}</span>
             <i className='devicon-css3-plain'></i>

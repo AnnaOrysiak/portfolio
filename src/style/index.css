@@ -6,11 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --main-color: #0FA0FF;
+  --main-color: #0fa0ff;
   --dark-main-color: #005099;
   --light-main-color: lightblue;
   --dark-color: #333;
-  --light-color: #F2FAFA;
+  --light-color: #f2fafa;
 }
 
 body {
@@ -37,26 +37,16 @@ h3 {
   padding-bottom: 3rem;
 }
 
-h3::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  width: 2rem;
-  height: 5rem;
-  background: var(--main-color);
-  z-index: -1;
-}
-
 h3:first-letter {
   display: block;
   color: white;
-  border-radius: 50%;
+  background: var(--main-color);
   font-size: 2rem;
   line-height: 2rem;
-  padding: 0 .2rem 0 1.1rem;
-  letter-spacing: 5px;
+  width: 100%;
+  padding: 0 0.2rem 3rem 0.3rem;
+  margin-left: 1rem;
+  text-align: center;
 }
 
 h4 {
