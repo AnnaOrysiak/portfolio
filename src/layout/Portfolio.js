@@ -72,7 +72,6 @@ class Portfolio extends Component {
         <Navigation
           naviHandler={this.naviHandler}
           langHandler={this.langHandler}
-          scrollHandler={this.scrollHandler}
           language={language}
           content={content}
           scrollY={scrollY}
