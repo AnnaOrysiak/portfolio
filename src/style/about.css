@@ -53,7 +53,7 @@
   color: white;
   background: var(--dark-main-color);
   opacity: 0;
-  font-size: 1rem;
+  font-size: .8rem;
   -webkit-transition: opacity .3s;
   -moz-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -106,6 +106,12 @@
   font-size: .8rem;
 }
 
+
+@media(min-width:375px) {
+  .skillset span {
+    font-size: 1rem;
+  }
+}
 
 @media(min-width:568px) {
   .mainStats {
