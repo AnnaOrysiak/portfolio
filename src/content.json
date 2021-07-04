@@ -1,4 +1,5 @@
-[{
+[
+    {
         "language": "pl",
         "home": "Start",
         "about": "O mnie",
@@ -10,7 +11,6 @@
         "skill_tasks": "Potrafię świetnie zarządzać czasem i organizacją pracy",
         "skill_learn": "Chętnie uczę się nowych rzeczy",
         "skill_nonconflicting": "Dążę do rozwiązywania konfliktów",
-
         "hard_skills": "Umiejętności twarde",
         "skill_html": "Posiadam wiedzę z zakresu HTML",
         "skill_css": "Dobrze znam CSS",
@@ -25,21 +25,21 @@
         "skill_nodejs": "Rozwijam swoje umiejętności w zakresie Node.js",
         "skill_mongodb": "Rozwijam swoje umiejętności w zakresie MongoDB",
         "skill_express": "Rozwijam swoje umiejętności korzystania z Expressa",
-
         "introduction_1": "Nazywam się Anna Orysiak. Przygodę z programowaniem rozpoczęłam od nauki C++, potem pojawiły się technologie Webowe - PHP i MySQL, aż wreszcie skupiłam się na frontendzie. Czuję silną potrzebę ciągłego rozwoju dlatego, że uwielbiam uczyć się nowych rzeczy.",
         "introduction_2": "Wolne chwile spędzam czytając dobrą książkę w hamaku, organizując rodzinną eskapadę lub próbując rozwiązać łamigłówki kolejnego Pokoju Ucieczki (Escape Room). Interesuję się także Kulturą Dalekiego Wschodu.",
         "hobby_anime": "Obejrzanych serii anime",
         "hobby_fantasy": "Przeczytanych książek fantasy",
         "hobby_er": "Odwiedzonych pokoi (Escape Room)",
         "portfolio": "Moje projekty",
-        "projects": [{
+        "projects": [
+            {
                 "id": 1,
                 "project_name": "Battleship",
                 "project_description": "Prosty projekt popularnej gry w statki. Create React App.",
                 "project_url_live": "https://annaorysiak.github.io/battleship/",
                 "project_url_code": "https://github.com/AnnaOrysiak/battleship",
-                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
-                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176_960_720.jpg"
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2012/12/10/12/29/u-s-navy-69208_960_720.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2012/12/10/12/29/u-s-navy-69208_960_720.jpg"
             },
             {
                 "id": 2,
@@ -107,7 +107,6 @@
         "skill_tasks": "I have strong time management skills",
         "skill_learn": "I am very eager to learn",
         "skill_nonconflicting": "I believe in cooperation, not conflict",
-
         "hard_skills": "Hard skills",
         "skill_html": "I know HTML",
         "skill_css": "I know CSS well",
@@ -122,21 +121,21 @@
         "skill_nodejs": "I'm developing my programming skills in Node.js",
         "skill_mongodb": "I'm developing my programming skills in MongoDB",
         "skill_express": "I'm developing my programming skills in Express",
-
         "introduction_1": "My name is Anna Orysiak and I’m an aspiring programmer. My adventure with coding started with learning C++. Afterwards, it was the Web technologies that sparked my interest, specifically PHP and MySQL. Thus I decided to continue my professional development in frontend.",
         "introduction_2": "I spend my free time reading a good book in a hammock, organizing a family trips or trying to solve the puzzles of the next Escape Room. I am also interested in Far Eastern Culture.",
         "hobby_anime": "Watched anime series",
         "hobby_fantasy": "Read fantasy books",
         "hobby_er": "Escape Rooms played",
         "portfolio": "My projects",
-        "projects": [{
+        "projects": [
+            {
                 "id": 1,
                 "project_name": "Battleship",
                 "project_description": "A simple project of the popular game. Create React App.",
                 "project_url_live": "https://annaorysiak.github.io/battleship/",
                 "project_url_code": "https://github.com/AnnaOrysiak/battleship",
-                "project_img_mobile": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176__340.jpg",
-                "project_img_desktop": "https://cdn.pixabay.com/photo/2015/12/24/21/57/submarine-1107176_960_720.jpg"
+                "project_img_mobile": "https://cdn.pixabay.com/photo/2012/12/10/12/29/u-s-navy-69208_960_720.jpg",
+                "project_img_desktop": "https://cdn.pixabay.com/photo/2012/12/10/12/29/u-s-navy-69208_960_720.jpg"
             },
             {
                 "id": 2,
@@ -192,5 +191,4 @@
         "your_message": "Your message",
         "send_message": "Send"
     }
-
 ]
